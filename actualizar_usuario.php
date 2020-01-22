@@ -33,8 +33,9 @@
                 </div>
             </div>
             <?php
-				include ("conexion.php");
-				$usuario = new Database();
+			
+				include ("Async_Consultar_Usuario.php");
+				$usuario = new Async_Consultar_Usuario();
 				
 				if(isset($_POST) && !empty($_POST)){
 					

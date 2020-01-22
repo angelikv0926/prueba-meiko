@@ -27,8 +27,8 @@
             </div>
             <?php
 
-				include ("conexion.php");
-				$usuario = new Database();
+				include ("Async_grabar_Usuario.php");
+				$usuario = new Async_grabar_Usuario();
 				if(isset($_POST)){
 					$nomn_usu = $usuario->limpiar($_POST['nomn_usu']);
 					$ape_usu = $usuario->limpiar($_POST['ape_usu']);
