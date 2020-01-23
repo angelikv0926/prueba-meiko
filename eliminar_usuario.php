@@ -1,15 +1,14 @@
 <?php
 
-if (isset($_GET['id_usu'])){
-	include('Async_Borrar_Usuario.php');
-	$usuario = new Async_Borrar_Usuario();
-	$id_usu=intval($_GET['id_usu']);
-	$res = $usuario->eliminarUsuario($id_usu);
-	if($res){
-		header('location: index.php');
-	}else{
-		echo "Error al eliminar el registro";
-	}
+include_once("config/config.php");
+
+$Database=new Database();
+$row = $Database->eliminarUsuario($_GET['id']);
+
+if($row){
+	header('location: main_admin.php');
+}else{
+	echo "Error al eliminar el registro";
 }
 
 ?>

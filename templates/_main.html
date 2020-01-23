@@ -1,0 +1,20 @@
+<div>
+	<form name="frm_listado">
+		<br>
+		<a href="creacion_usuarios.php" class="btn btn-primary"><i class="fa fa-plus"></i>&nbsp;&nbsp;Agregar usuario&nbsp;&nbsp;</a>
+		<br><br><br>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Nombres</th>
+					<th>E-mail</th>
+					<th>Pais</th>
+					<th>Acciones</th>
+				</tr>
+			</thead>
+			<tbody id="tbody_listado">
+				{$tbody|utf8_encode}
+			</tbody>
+		</table>
+	</form>
+</div>
