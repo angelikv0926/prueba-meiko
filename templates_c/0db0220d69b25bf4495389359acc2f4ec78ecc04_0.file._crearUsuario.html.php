@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-23 15:35:34
+/* Smarty version 3.1.34-dev-7, created on 2020-01-23 18:05:06
   from 'C:\xampp\htdocs\nuevo\templates\_crearUsuario.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e29af36cc3848_60343986',
+  'unifunc' => 'content_5e29d242e254b8_75178359',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0db0220d69b25bf4495389359acc2f4ec78ecc04' => 
     array (
       0 => 'C:\\xampp\\htdocs\\nuevo\\templates\\_crearUsuario.html',
-      1 => 1579790105,
+      1 => 1579799096,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e29af36cc3848_60343986 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e29d242e254b8_75178359 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div>
 	<form>
 		<h2>Agregar Usuario</h2>
@@ -43,7 +43,8 @@ function content_5e29af36cc3848_60343986 (Smarty_Internal_Template $_smarty_tpl)
 		</div>
 		<div class="col-md-12">
 			<label>Pais:</label>
-			<input type="text" name="pais" id="pais" class='form-control' maxlength="15" required >
+			<?php echo $_smarty_tpl->tpl_vars['output']->value;?>
+
 		</div>
 		<div class="col-md-12">
 			<label>Clave:</label>

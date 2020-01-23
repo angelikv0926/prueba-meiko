@@ -1,0 +1,35 @@
+<div>
+	<form>
+		<h2>Modificar Usuario</h2>
+		<a href="main_admin.php" class="btn btn-primary"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Regresar&nbsp;&nbsp;</a>
+		<br><br><br>
+	</form>
+	
+	<form method="post" action="modificarUsuario.php">
+		<div class="col-md-12">
+			<label>Nombres:</label>
+			<input type="text" name="nomn_usu" id="nomn_usu" class='form-control' maxlength="100" required value="{$nombre}">
+			<input type="hidden" name="id" id="id" class='form-control' maxlength="100" value="{$id}">
+		</div>
+		<div class="col-md-12">
+			<label>Apellidos:</label>
+			<input type="text" name="ape_usu" id="ape_usu" class='form-control' maxlength="100" required value="{$apellido}">
+		</div>
+		<div class="col-md-12">
+			<label>E-Mail:</label>
+			<input type="text" name="email" id="email" class='form-control' maxlength="64" required value="{$email}">
+		</div>
+		<div class="col-md-12">
+			<label>Pais:</label>
+			{$output}
+		</div>
+		<div class="col-md-12">
+			<label>Clave:</label>
+			<input type="password" name="pass_usu" id="pass_usu" class='form-control' maxlength="64" required value="{$pass}">
+		</div>
+		<div class="col-md-12">
+			<button type="submit" id="btn_grabar" class="btn btn-success">&nbsp;&nbsp;Actualizar&nbsp;&nbsp;</button>	
+		</div>
+	</form>
+</div>
+

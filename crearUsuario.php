@@ -10,6 +10,6 @@ if($row){
 	header("location: main_admin.php");
 }else{
 	$message = "Datos NO insertados";
-	header("location: main_usuario.php");
+	echo $message;
 }
 ?>

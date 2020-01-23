@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-01-23 18:22:33
+  from 'C:\xampp\htdocs\prueba-meiko\templates\_generic.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5e29d65989f127_34824829',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd08ffe4085ffbd430bd2c710cea408cd2dcb22ac' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\prueba-meiko\\templates\\_generic.html',
+      1 => 1579800146,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5e29d65989f127_34824829 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,32 +41,58 @@
 		<link rel="stylesheet" type="text/css" href="css/custom-theme/jquery-ui-1.10.4.custom.css" />
 		
 		<style type="text/css">
-			{literal}
+			
 				.container{max-width:940px}
 				#sp-header-wrapper{padding: 15px 0px 7px 0px !important; }
 				#sp-menu-wrapper{color: rgb(255, 255, 255) !important; }
 				#sp-menu-wrapper a{color: rgb(255, 255, 255) !important; }
 				#sp-menu-wrapper a:hover{color: rgb(45, 86, 152) !important; }
 				#sp-footer-wrapper{padding: 30px 0 !important; }
-			{/literal}
+			
 		</style>
 		
-		<script src="js/jquery.min.js" type="text/javascript"></script>
-		<script src="js/jquery-noconflict.js" type="text/javascript"></script>
-		<script src="js/jquery-migrate.min.js" type="text/javascript"></script>
-		<script src="js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="js/jquery-noconflict(1).js" type="text/javascript"></script>
-		<script src="js/modernizr-2.6.2.min.js" type="text/javascript"></script>
-		<script src="js/helix.core.js" type="text/javascript"></script>
-		<script src="js/menu.js" type="text/javascript"></script>
-		<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-		<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-		<script src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
-		<script src="js/validacion.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/i18n/grid.locale-en.js"></script>
+		<?php echo '<script'; ?>
+ src="js/jquery.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/jquery-noconflict.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/jquery-migrate.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/bootstrap.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/jquery-noconflict(1).js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/modernizr-2.6.2.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/helix.core.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/menu.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/jquery.flexslider-min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/jquery-1.10.2.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="js/validacion.js" type="text/javascript"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ type="text/javascript" src="js/i18n/grid.locale-en.js"><?php echo '</script'; ?>
+>
 		
 		<style>
-			{literal}
+			
 				#sp-footer-wrapper {
 					background: transparent !important;
 					padding: 0px 0 !important;
@@ -51,7 +100,7 @@
 				.separador_menu a{
 					color: rgb(45, 86, 152) !important;
 				}
-			{/literal}
+			
 		</style>
 	</head>
 	
@@ -71,7 +120,7 @@
 						<div id="sp-menu" class="span12">
 							<div id="sp-main-menu">
 								<ul class="sp-menu level-0">
-									{if $MENU eq SI}
+									<?php if ($_smarty_tpl->tpl_vars['MENU']->value == 'SI') {?>
 										<li class='menu-item'>
 										<a href='exit.php' class='menu-item active first'>
 											<span class='menu'>
@@ -79,7 +128,7 @@
 											</span>
 										</a>
 									</li>
-									{/if}
+									<?php }?>
 									<li>
 										<a target="_blank" href='PASOS DE INSTALACIÓN.pdf' class='menu-item active first'>
 											<span class='menu'>
@@ -100,7 +149,8 @@
 				<section id="sp-contenido-interno-wrapper" class=" ">
 					<div class="container-fluid" align="center">
 						<br>
-						{$CONTENIDO_MODULO}
+						<?php echo $_smarty_tpl->tpl_vars['CONTENIDO_MODULO']->value;?>
+
 					</div>
 				</section>
 			</div>
@@ -114,4 +164,5 @@
 			</footer>
 		</div>		
 	</body>
-</html>
+</html><?php }
+}

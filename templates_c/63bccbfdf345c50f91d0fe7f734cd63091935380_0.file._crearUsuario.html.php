@@ -1,4 +1,27 @@
-<div>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-01-23 18:22:45
+  from 'C:\xampp\htdocs\prueba-meiko\templates\_crearUsuario.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5e29d665a361e1_81388064',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '63bccbfdf345c50f91d0fe7f734cd63091935380' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\prueba-meiko\\templates\\_crearUsuario.html',
+      1 => 1579799096,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5e29d665a361e1_81388064 (Smarty_Internal_Template $_smarty_tpl) {
+?><div>
 	<form>
 		<h2>Agregar Usuario</h2>
 		<a href="main_admin.php" class="btn btn-primary"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Regresar&nbsp;&nbsp;</a>
@@ -20,7 +43,8 @@
 		</div>
 		<div class="col-md-12">
 			<label>Pais:</label>
-			{$output}
+			<?php echo $_smarty_tpl->tpl_vars['output']->value;?>
+
 		</div>
 		<div class="col-md-12">
 			<label>Clave:</label>
@@ -32,3 +56,5 @@
 	</form>
 </div>
 
+<?php }
+}

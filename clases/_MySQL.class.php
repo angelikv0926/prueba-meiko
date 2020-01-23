@@ -46,9 +46,30 @@ class Database{
 		return $resp;
 	}
 	
+	//Consulta usuario por id
+	public function consultarUsuarioById($id_usu){
+		$sql = "SELECT * FROM usuarios where id_usu='$id_usu'";
+		$resp = mysqli_query($this->con, $sql);
+		$row = mysqli_fetch_assoc($resp);
+		return $row;
+	}
+	
 	//Crear usuario
 	public function crearUsuario($nomn_usu, $ape_usu, $email, $pais, $pass_usu){
 		$sql = "INSERT INTO `usuarios` (nomn_usu, ape_usu, email, pais_usu, pass_usu, cod_Roll) VALUES ('$nomn_usu', '$ape_usu', '$email', '$pais', '$pass_usu', 2)";
+		$resp = mysqli_query($this->con, $sql);
+		
+		if($resp){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	//Actualizar usuario
+	public function actualizarUsuario($nomn_usu,$ape_usu,$email,$pais, $pass_usu, $id_usu){
+		$sql = "UPDATE usuarios SET
+					nomn_usu='$nomn_usu', ape_usu='$ape_usu', email='$email', pais_usu='$pais', pass_usu='$pass_usu' WHERE id_usu=$id_usu";
 		$resp = mysqli_query($this->con, $sql);
 		
 		if($resp){

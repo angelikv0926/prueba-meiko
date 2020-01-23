@@ -13,7 +13,7 @@ foreach ($listado as $row){
 	$btn_actualizar="<a href='actualizar_usuario.php?id={$row['id_usu']}' class='btn btn-primary'>Editar</a>";
 	$btn_borrar="<a href='eliminar_usuario.php?id={$row['id_usu']}' class='btn btn-danger'>Eliminar</a>";
 
-	$buffer.="<tr><td>{$row['nomn_usu']}</td> <td>{$row['email']}</td> <td>{$row['pais_usu']}</td>
+	$buffer.="<tr><td>{$row['nomn_usu']} {$row['ape_usu']}</td> <td>{$row['email']}</td> <td>{$row['pais_usu']}</td>
 				<td>$btn_actualizar $btn_borrar</td></tr>";
 }
 
